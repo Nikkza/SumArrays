@@ -2,8 +2,9 @@ import org.javatuples.Pair;
 
 import java.util.List;
 
-public interface SumArray {
+public interface SumArray
+{
     Pair<List<Integer>, Integer> CreateLIst(String value);
-    Pair<List<Integer>, List<Integer>> Spl(String value);
-    List<Integer> SumValueFromLists(List<Integer> listNew, int countRounds);
+    int[][] splitArray(int[] array);
+    int[] SumValueFromLists(int[] array, int countRounds);
 }
